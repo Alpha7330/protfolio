@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: fill;
+ 
+  
+}
+li {
+  list-style: none;
+}
+nav {
+  height: 3vmax;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  box-shadow: 0 0 3px gray;
+  position: sticky;
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  top: 0%;
+  gap: 20px;
+  z-index: 100;
+  padding: 20px;
+  flex-wrap: nowrap;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+nav a:hover {
+  color: rgba(245, 172, 14, 0.834);
+  background-color:rgba(28, 157, 213, 0.8);
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 0.5fr 3fr 2fr 1fr;
+  gap: 0;
+}
+.photoSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    height: 20rem;
+    gap: 2rem;
+}
+.container1,
+.container2,
+.container3 {
+  margin: 0;
+  padding: 20px;
+}
+.container1 {
+  font-size: large;
+
+/* background: linear-gradient(90deg, rgba(0,31,36,1) 0%, rgba(37,136,173,0.9360994397759104) 11%, rgba(0,134,255,1) 78%, rgba(9,9,121,1) 100%); */
+  
+  text-align: center;
+  
+}
+
+
+.container2 {
+    
+  font-size: larger;
+  text-align: center;
+
+  
+}
+.container3 {
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+  max-height: fit-content;
+  text-align: center;
+  color: white;
+}
+.container3 a{
+    color: blueviolet;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: white; }
+}
+
+.myname {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid black; 
+    animation: typing 3s steps(30, end) forwards, blink .75s  ;
+    width: 0; 
+    display: inline-block;
+}
+
+.photoSection {
+    text-align: center; 
+    
+    
+}
+
+.photoSection img {
+    margin-top: 20px;
+    width: 150px;
+    height: auto; 
+    border-radius: 50%; 
+}
